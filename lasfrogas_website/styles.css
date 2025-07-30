@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Silkscreen:wght@400;700&display=swap');
+
+/*----------Default values for tags----------*/
+    body{
+        background: white;
+        background-color: white;
+        display: flex;
+        flex-direction: column; 
+    }
+
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    h1{
+        font-family: "Lekton";
+        font-weight: bold;
+        margin:1rem;
+    }
+
+    h3{
+        font-family: "Lekton";
+        margin:0;
+        color:black;
+    }
+
+    h6{
+        margin:1rem;
+    }
+
+    p{
+        font-family: "Lekton";
+        font-size:large;
+        font-weight: bold;
+        vertical-align: top;
+        margin:0;
+        text-indent: 40px;
+        color:black;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li{
+        margin-bottom: 25px;
+    }
+
+    figcaption{
+        text-align: center;
+        color:black;
+    }
+
+    figure.clickable:hover figcaption{
+        color:red;
+    }
+
+    a:hover{
+        color: #ff0000;
+
+    }
+
+
+
+/*----------Values for Navbar/Mobible menu----------*/
+    .logo-div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: .1rem;
+        gap: 1rem;
+        background-image: url(./images/croppedDecal.png);
+        background-size: contain;
+    }
+
+    .logo {
+        width: 27rem;
+        height: 6rem;
+    }
+
+    .artwork{
+        max-width: 30rem;
+        min-width:20rem;
+        height:100%;
+        object-fit: contain;
+    }
+
+    .Navbar{
+        color: white;
+        background-color: black;
+        font-family: "Silkscreen";
+        font-weight: 700;
+        font-size: 32px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: .5rem 0;
+        position:sticky;
+        top:0;
+        word-spacing:.67rem;
+    }
+
+    .hamburger-icon{
+        display: none;
+        background-color: black;
+        position:sticky;
+        top:0;
+    }
+
+    .x{
+        position:absolute;
+        top:2px;
+        left: 25px;
+    }
+
+    .material-symbols-outlined{
+        font-size:37px;
+    }
+
+    .off-screen-menu{
+        color: white;
+        background-color: black;
+        font-family: "Silkscreen";
+        font-size:32px;
+        font-weight: 700;
+        height:100%;
+        width: 100%;
+        max-width: 320px;
+        margin:0px;
+        margin-top: 0px;
+        position: absolute;
+        top:111px;
+        left:-320px;
+        display: none;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+        text-align: center;
+        transition: .3s ease;
+    }
+
+    .off-screen-menu.active{
+        left:-40px;
+    }
+
+/*----------Biography page----------*/
+.home-body{
+    display:flex;
+    margin:0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin:0;
+
+}
+
+/*----------Works page----------*/
+    .works-content{
+        display: grid;
+        grid-template-columns: auto auto;
+        font-family: "Lekton";
+        color:black;
+        margin-bottom:50px;
+
+    }
+    .works-content > .works-instance{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Lekton";
+        color:black;
+        margin:50px;
+        
+
+        
+        
+}
+
+
+/*----------Footer----------*/
+    .footer{
+        font-family: "Lekton";
+        font-size: 26px;
+        flex-grow: 2s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin:0;   
+        
+    }
+
+    .kunaki{
+        width:5rem;
+        height:auto;
+    }
+
+/*Adjustments made for mobile view*/
+    @media (max-width:1101px){
+        .Navbar {
+            display:none;
+        }
+        .hamburger-icon{
+            display: flex;
+            padding: .5rem 0;
+            position:sticky;
+            top:0;
+        }
+        .off-screen-menu{
+            display:flex;
+        }
+
+    }
