@@ -3,10 +3,11 @@
 
 /*----------Default values for tags----------*/
     body{
-        background: white;
-        background-color: white;
+        background:#dbdbdb;
+        background-color: #dbdbdb;
         display: flex;
         flex-direction: column; 
+        overflow-x:hidden;
     }
 
 
@@ -27,6 +28,13 @@
         color:black;
     }
 
+    h4{
+        font-family: "Lekton";
+        font-weight: lighter;
+        margin:0;
+        color:black;
+    }
+
     h6{
         margin:1rem;
     }
@@ -42,11 +50,19 @@
     }
 
     ul {
-        list-style-type: none;
+        list-style-type: none !important;
     }
 
     li{
         margin-bottom: 25px;
+    }
+
+    li::marker{
+        display:none;
+    }
+
+    ul li::marker {
+        display:none;
     }
 
     figcaption{
@@ -56,6 +72,7 @@
 
     figure.clickable:hover figcaption{
         color:red;
+        box-shadow:#ff0000
     }
 
     a:hover{
@@ -72,7 +89,7 @@
         align-items: center;
         padding: .1rem;
         gap: 1rem;
-        background-image: url(./images/croppedDecal.png);
+        background-image: url(./images/arts/croppedDecal.png);
         background-size: contain;
     }
 
@@ -110,11 +127,6 @@
         top:0;
     }
 
-    .x{
-        position:absolute;
-        top:2px;
-        left: 25px;
-    }
 
     .material-symbols-outlined{
         font-size:37px;
@@ -126,24 +138,46 @@
         font-family: "Silkscreen";
         font-size:32px;
         font-weight: 700;
-        height:100%;
+        height:auto;
         width: 100%;
         max-width: 320px;
         margin:0px;
         margin-top: 0px;
         position: absolute;
         top:111px;
-        left:-320px;
+        left:-330px;
         display: none;
         flex-direction: column;
         justify-content: top;
         align-items: center;
         text-align: center;
         transition: .3s ease;
+        border:2px solid red;
     }
 
     .off-screen-menu.active{
-        left:-40px;
+        display:flex;
+        flex-direction: column;
+        left:0px;
+    }
+
+
+    .mini-window-bar{
+        margin-bottom:60px
+    }
+
+    .x{
+        position:absolute;
+    }
+
+    .mini-window{
+        list-style: none;
+    }
+
+    .list{
+        list-style-type:none !important;
+        margin:0;
+        padding:0;
     }
 
 /*----------Biography page----------*/
@@ -164,25 +198,113 @@
 
 /*----------Works page----------*/
     .works-content{
+        margin-left:38px;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(auto-fill, 600px);
+        grid-gap:100px;
         font-family: "Lekton";
         color:black;
-        margin-bottom:50px;
+        margin-bottom:0px;
+        justify-content: center;
 
     }
     .works-content > .works-instance{
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         font-family: "Lekton";
         color:black;
-        margin:50px;
-        
-
-        
+        margin:0px;
         
 }
+
+/*----------exhibits----------*/
+
+.year{
+    display:flex;
+    flex-direction: row;
+    justify-content:left;
+    
+
+}
+
+.exhibit-text{
+    align-content: center;
+}
+
+
+/*----------Contact----------*/
+
+.icon{
+    width:5rem;
+    height:auto;
+}
+
+.contact-body{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    
+    
+}
+
+
+/*----------Art pages----------*/
+.artpage-body{
+    display:flex;
+    flex-direction: row;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+
+.art{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.art-text{
+    align-content: center;
+    align-items: center;
+    margin-left: 25px
+}
+
+
+.verti-art{
+        max-width:75%;
+        min-width:20rem;;
+        max-height: 75rem;
+        height:auto;
+        object-fit:contain;
+        border:1px solid grey
+}
+
+.horiz-art{
+        max-width:75%;
+        min-width:20rem;;
+        max-height: 50rem;
+        height:auto;
+        object-fit:contain;
+        border:1px solid grey
+}
+
+.spec-art{
+        max-width:75%;
+        min-width:20rem;;
+        max-height: 120vh;
+        height:auto;
+        object-fit:contain;
+        border:1px solid grey
+}
+
+
+
+
 
 
 /*----------Footer----------*/
@@ -198,7 +320,13 @@
         
     }
 
-    .kunaki{
+    .lil-guy{
+        width:5rem;
+        height:auto;
+    }
+
+    .footer-guy{
+        border:5px solid black;
         width:5rem;
         height:auto;
     }
@@ -216,6 +344,37 @@
         }
         .off-screen-menu{
             display:flex;
+        }
+
+        .art{
+            display:flex;
+            flex-direction: column;
+        }
+
+        .artpage-body{
+            flex-direction: column;
+        }
+
+        .horiz-art{
+            max-width:95%;
+            min-width:20rem;;
+            max-height: 50rem;
+            height:auto;
+            object-fit:contain;
+        }
+
+        .verti-art{
+            max-width:95%;
+            min-width:20rem;;
+            max-height: 69rem;
+            height:auto;
+            object-fit:contain;
+        }
+
+        .art-text{
+            display: flex;
+            flex-direction: column;
+            vertical-align: center;
         }
 
     }
