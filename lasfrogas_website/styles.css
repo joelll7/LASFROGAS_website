@@ -55,6 +55,7 @@
 
     li{
         margin-bottom: 25px;
+        list-style-type:none;
     }
 
     li::marker{
@@ -63,6 +64,11 @@
 
     ul li::marker {
         display:none;
+    }
+
+    figure{
+        padding:0px;
+        border:0px;
     }
 
     figcaption{
@@ -80,6 +86,9 @@
 
     }
 
+    .clickable{
+        padding:0px;
+    }
 
 
 /*----------Values for Navbar/Mobible menu----------*/
@@ -103,6 +112,8 @@
         min-width:20rem;
         height:100%;
         object-fit: contain;
+        border:2px solid grey;
+
     }
 
     .Navbar{
@@ -163,19 +174,27 @@
 
 
     .mini-window-bar{
-        margin-bottom:60px
+        display:flex;
+        flex-direction: row;
+        font-size:20px;
+        font-weight: 700;
+        margin-top:10px;
+        list-style-type:none;
+        justify-content:left;
+        align-items: center;
+        height:30px;
+        margin:0px;
+        margin-top:10px;
     }
 
     .x{
-        position:absolute;
+        font-size:40px;
     }
 
     .mini-window{
-        list-style: none;
     }
 
     .list{
-        list-style-type:none !important;
         margin:0;
         padding:0;
     }
@@ -206,6 +225,8 @@
         color:black;
         margin-bottom:0px;
         justify-content: center;
+        padding:0px;
+        border:0px;
 
     }
     .works-content > .works-instance{
@@ -215,6 +236,8 @@
         font-family: "Lekton";
         color:black;
         margin:0px;
+        padding:0px;
+        border:0px;
         
 }
 
@@ -223,7 +246,7 @@
 .year{
     display:flex;
     flex-direction: row;
-    justify-content:left;
+    justify-content:flex-start;
     
 
 }
