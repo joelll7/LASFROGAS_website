@@ -180,15 +180,44 @@
         padding:0;
     }
 
-/*----------Biography page----------*/
+/*----------Home page----------*/
 .home-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+}
+
+.home-artwork{
+    max-width: 30rem;
+    min-width:20rem;
+    height:100%;
+    object-fit: contain;
+    border:grey 3px solid;
+}
+
+.home-text{
+    align-items:center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    background-color:white;
+    border:grey 3px solid;
+    width: 400px;
+    margin:30px;
+}
+
+
+
+/*----------Biography page----------*/
+.bio-body{
     display:flex;
     margin:0;
     align-items: center;
     flex-direction: column;
 }
 
-.home-text{
+.bio-text{
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -230,6 +259,15 @@
 
 .exhibit-text{
     align-content: center;
+    padding-left: 30px; 
+    text-indent: -30px; 
+}
+
+.exhibit-body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
