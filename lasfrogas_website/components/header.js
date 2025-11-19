@@ -33,13 +33,15 @@ class Header extends HTMLElement {
 
         <div class="off-screen-menu">
             <div class = mini-window-bar>
+                <img src=/images/arts/headphones.png style="width:2rem; margin-right:5px; margin-top:10px;"></img>
+                <span style="font-family: "Lekton"; font-weight: 300; font-size: 5px; margin-top:10px;">LASFROGAS</span>
                 <a href="javascript:void(0);" class = "x" onclick="toggleLinks()">
-                    <span class="x">X</span>
+                    <span class="x" style="margin-left:80px;">X</span>
                 </a>
             </div>
             <div class = "mini-window>
                 <ul class="list">
-                    <hr style="color: white; display: block; width: 95%; margin-top:0.6em; height: 3px; background-color: white;">
+                    <hr style="color: white; width: 316px; margin-top:0.6em; height: 1.5px; background-color:red; border-color:red">
                     <li><a href="/pages/bio.html">Biography</a></li>
                     <li><a href="/pages/works.html">Works</a></li>
                     <li><a href="/pages/exhibits.html">Exhibitions</a></li>
